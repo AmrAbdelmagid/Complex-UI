@@ -1,4 +1,6 @@
-import 'package:complex_ui/src/presentation/home.dart';
+import 'package:complex_ui/src/constants/routes.dart';
+import 'package:complex_ui/src/presentation/screens/01-home/home.dart';
+import 'package:complex_ui/src/presentation/widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {
@@ -7,9 +9,9 @@ class AppRouter {
       settings: settings,
       builder: (BuildContext context) {
         switch (settings.name) {
-          case Home.routeName:
+          case homeRoute:
           default:
-            return const Home();
+            return const CustomDrawer();
         }
       },
     );
